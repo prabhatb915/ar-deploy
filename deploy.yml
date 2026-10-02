@@ -5,7 +5,7 @@ metadata:
   labels:
     app: bank
 spec:
-  replicas: 10
+  replicas: 5
   selector:
     matchLabels:
       app: bank
@@ -23,7 +23,7 @@ kind: Service
 metadata:
   name: mobilebankingservice
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: bank
   ports:
