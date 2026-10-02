@@ -21,7 +21,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mobilebankingservice
+  name: Internetbankingservice
 spec:
   type: NodePort
   selector:
